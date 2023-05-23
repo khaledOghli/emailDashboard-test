@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+:root {
+  --sidebar-bg: #f8fafc;
+  --sidebar-stroke: #e5e7eb;
+  --sidebar-bg-hover: #d6e2fb;
+  --light-100: #ffffff;
+  --light-200: #fafafa;
+  --light-300: #f5f5f5;
+  --light-400: #f0f0f0;
+  --light-500: #d8d8d8;
+  --light-600: #bfbfbf;
+  --light-700: #8c8c8c;
+  --light-800: #595959;
+  --light-900: #262626;
+  --light-1000: #000000;
+  --primary-100: #e6f7ff;
+  --primary-200: #bae7ff;
+  --primary-300: #91d5ff;
+  --primary-400: #69c0ff;
+  --primary-500: #40a9ff;
+  --primary-600: #1890ff;
+  --primary-700: #096dd9;
+  --primary-800: #0050b3;
+  --primary-900: #003a8c;
+  --primary-1000: #002766;
+  --sidebar-width: 300px;
+  --sidebar-width-collapsed: 80px;
+  --sidebar-width-expanded: 300px;
+  --main-transition: 0.2s;
+  --main-transition-easing: ease-in-out;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--light-100);
+  --color-background-soft: var(--light-300);
+  --color-background-mute: var(--light-400);
+  --color-background-hover: var(--primary-400);
+  --color-border: var(--light-500);
+  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-heading: var(--light-1000);
+  --color-text: var(--light-900);
+  --color-text-mute: var(--light-800);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--light-1000);
+    --color-background-soft: var(--light-900);
+    --color-background-mute: var(--light-800);
+    --color-background-hover: var(--primary-600);
+    --color-border: var(--light-700);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+    --color-heading: var(--light-100);
+    --color-text: var(--light-200);
+    --color-text-mute: var(--light-300);
+  }
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+svg,
+path {
+  transition-property: fill, stroke;
+  transition-duration: var(--main-transition);
+  transition-timing-function: var(--main-transition-easing);
+}
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

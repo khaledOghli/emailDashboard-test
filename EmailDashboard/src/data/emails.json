@@ -1,0 +1,38 @@
+[
+  {
+      "id": 1,
+      "from": "John Doe",
+      "subject": "Lorem ipsum dolor sit amet",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae nisi euismod, aliquam augue quis, aliquam nisl. Donec euismod, nisl quis aliquam ultricies, nisl nisl aliquam nisl, quis aliquam nisl nisl quis nisl. Donec euismod, nisl quis aliquam ultricies, nisl nisl aliquam nisl, quis aliquam nisl nisl quis nisl.",
+      "date": "2020-01-01",
+      "read": false,
+      "starred": false,
+      "deleted": false,
+      "checked": false,
+      "folder": 1
+  },
+    {
+      "id": 2,
+      "from": "John Doe",
+      "subject": "Lorem ipsum dolor sit amet",
+      "body": "Lorem ipsum dolor sit ametod, nisl quis aliquam ultricies, nisl nisl aliquam nisl, quis aliquam nisl nisl quis nisl.",
+      "date": "2020-01-01",
+      "read": false,
+      "starred": false,
+      "deleted": false,
+      "checked": false,
+      "folder": 1
+  },
+    {
+      "id": 3,
+      "from": "John Doe",
+      "subject": "Lorem ipsum dolor sit amet",
+      "body": "Lorem ipsum dolor sit ametod, nisl quis aliquam ultricies, nisl nisl aliquam nisl, quis aliquam nisl nisl quis nisl.",
+      "date": "2020-01-01",
+      "read": false,
+      "starred": false,
+      "deleted": false,
+      "checked": false,
+      "folder": 2
+  }
+]

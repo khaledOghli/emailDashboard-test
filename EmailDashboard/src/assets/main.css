@@ -1,0 +1,76 @@
+@import './base.css';
+.app_content {
+  padding-inline: 1.5rem;
+}
+button.ghost {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: var(--light-900);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition-duration: 0.3s;
+  transition-property: background-color, color;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+button.ghost:hover {
+  color: var(--primary-700);
+}
+button.ghost:hover .icon path {
+  stroke: var(--primary-700);
+}
+button.ghost:active {
+  color: var(--primary-600);
+}
+button.ghost:active .icon path {
+  stroke: var(--primary-700);
+  font-weight: 600;
+}
+button.ghost:disabled {
+  background-color: transparent;
+  border-color: var(--primary-300);
+  color: var(--light-300);
+  cursor: not-allowed;
+}
+
+button.ghost .icon {
+  margin-inline-end: 0.5rem;
+}
+
+input[type='checkbox'] {
+  /* modern style checkbox */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  transition-duration: 0.3s;
+  transition-property: background-color, border-color;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 0.2rem;
+}
+input[type='checkbox']:checked {
+  background-color: var(--primary-700);
+  border-color: var(--primary-700);
+}
+input[type='checkbox']:checked::after {
+  content: '';
+  position: absolute;
+  top: 0.2rem;
+  left: 0.5rem;
+  width: 0.5rem;
+  height: 0.8rem;
+  border: solid #fff;
+  border-width: 0 0.2rem 0.2rem 0;
+  transform: rotate(45deg);
+}
